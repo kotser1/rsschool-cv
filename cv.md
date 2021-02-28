@@ -1,6 +1,5 @@
 # Sergei Kotelnikov
 **Address:** Moscow, Russia.
-***
 
 ## Contacts:
 
