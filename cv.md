@@ -49,7 +49,7 @@ document.addEventListener('keydown', function (evt) {
 ## Experience:
 **HTML-Academy** - HTML&CSS course
 - Project: [Technomart](https://github.com/kotser1/Technomart)
-- Project: [Pink](https://github.com/kotser1/pink) 
+- Project: [Pink](https://github.com/kotser1/1487045-pink-21) 
 
 ## Education:
 Moscow State University of Instrument Engineering and Computer Sciences - Human resources management. (2001 - 2006)
