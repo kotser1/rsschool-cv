@@ -20,7 +20,7 @@ I'm a beginner frontend developer.
 * JavaScript basics
 
 ## Code example:
-``` JavaScript
+```javascript
 const popupOrder = document.querySelector('.modal-order');
 const openOrderButton = document.querySelectorAll('.button-buy');
 const closeOrderPopupButton = popupOrder.querySelector('.modal-close');
