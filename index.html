@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CV - Sergei Kotelnikov</title>
+</head>
+
+<body class="page-body">
+  <header class="main-header container">
+    <figure>
+      <img src="img/avatar.jpg" width="300" alt="Profile photo">
+    </figure>
+    <!-- <img src="img/avatar.jpg" width="300" alt="Profile photo"> -->
+    <div class="main-header__info">
+      <h1>Sergei Kotelnikov</h1>
+      <section class="contacts">
+        <h2>Contacts</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <img src="img/email-icon.svg" width="50" alt="email icon">
+            <span>Email: <a href="mailto:newelvin@gmail.com">newelvin@gmail.com</a></span>
+          </li>
+          <li class="contacts__item">
+            <img src="img/telegram-icon.png" width="50" alt="Telegram icon">
+            <span>Telegram: <a href="https://t.me/kotser">kotser</a></span>
+          </li>
+          <li class="contacts__item">
+            <img src="img/skype-icon.png" width="50" alt="Skype icon">
+            <span>Skype: kotser</span>
+          </li>
+        </ul>
+        <h3>Location:</h3>
+        <span>Moscow, Russia.</span>
+      </section>
+    </div>
+  </header>
+  
+  <main class="main-content container">
+    <section class="about-me">
+      <h2>About me</h2>
+      <p>I'm a beginner frontend developer.</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS, SASS</li>
+        <li>BEM methodology</li>
+        <li>GIT, GitHub</li>
+        <li>Gulp</li>
+        <li>Photoshop, Figma</li>
+        <li>JavaScript basics</li>
+      </ul>
+    </section>
+
+    <section class="code-example">
+      <h2>Code example</h2>
+      <pre>
+        const popupOrder = document.querySelector('.modal-order');
+        const openOrderButton = document.querySelectorAll('.button-buy');
+        const closeOrderPopupButton = popupOrder.querySelector('.modal-close');
+
+        let buyButton = function (evt) {
+          evt.preventDefault();
+          popupOrder.classList.add('modal-show');
+        };
+
+        for (let i = 0; i &lt; openOrderButton.length; i++) {
+          openOrderButton[i].onclick = buyButton;
+        }
+
+        closeOrderPopupButton.addEventListener('click', function () {
+          popupOrder.classList.remove('modal-show');
+        })
+
+        document.addEventListener('keydown', function (evt) {
+          if (evt.keyCode === 27) {
+            popupOrder.classList.remove('modal-show');
+          }
+        });
+      </pre>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <h3>HTML-Academy.</h3>
+      <span>HTML&CSS course (2020):</span>
+      <ul>
+        <li>
+          <p>Project: <a class="experience__link" href="https://github.com/kotser1/Technomart" target="_blank"><b>Technomart</b></a></p>
+        </li>
+        <li>
+          <p>Project: <a class="experience__link" href="https://github.com/kotser1/1487045-pink-21" target="_blank"><b>Pink</b></a></p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="education">
+      <h2>Education</h2>
+      <p>Moscow State University of Instrument Engineering and Computer Sciences - Human resources management. (2006)</p>
+    </section>
+
+    <section class="languages">
+      <h2>Languages</h2>
+      <ul>
+        <li>Russian - Native</li>
+        <li>English - A2</li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="page-footer container">
+    <span>© 
+      <time datetime="2021-03-07">2021</time>
+    </span>
+    <a class="page-footer__link" href="https://github.com/kotser1">
+      <img src="img/githib-logo.png" width="100" alt="My GitHub profile">
+      <span class="visually-hidden">My GitHub</span>
+    </a>
+    <a class="page-footer__link" href="https://rs.school/js/">
+      <img src="img/rs_school_js.svg" width="100" alt="RS School logo">
+      <span class="visually-hidden">RS School</span>
+    </a>
+  </footer>
+</body>
+
+</html>
